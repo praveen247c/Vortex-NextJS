@@ -70,7 +70,7 @@ export const NAV: NavEntry[] = [
         { label: "For Agencies", href: "/solutions/for-agencies", desc: "Scale clients without scaling headcount", icon: "agencies" },
         { label: "For Tech Partners", href: "/solutions/for-tech-partners", desc: "Make your platform agentic", icon: "partners" },
         { label: "AI Enablement", href: "/solutions/ai-enablement", desc: "Launch your own AI agents", icon: "enablement" },
-        { label: "Integrations", href: "https://www.vortexiq.ai/solutions/integrations", desc: "Connect every commerce system", icon: "integrations", external: true },
+        { label: "Integrations", href: "/solutions/integrations", desc: "Connect every commerce system", icon: "integrations" },
       ],
     },
   },
@@ -89,9 +89,9 @@ export const NAV: NavEntry[] = [
         { label: "Blog", href: "/resources/blog", desc: "Product updates & insights", icon: "blog" },
         { label: "Customer Stories", href: "/customer-stories", desc: "Real results, line by line", icon: "stories" },
         { label: "About Us", href: "/about-us", desc: "Who we are and what we build", icon: "about" },
-        { label: "Careers", href: "https://www.vortexiq.ai/careers", desc: "Join the Vortex IQ team", icon: "careers", external: true },
-        { label: "Security & Trust", href: "https://www.vortexiq.ai/trust/trust-center", desc: "ISO 27001, approvals, rollback", icon: "trust", external: true },
-        { label: "Contact Us", href: "https://www.vortexiq.ai/contact-us", desc: "Partnerships & enquiries", icon: "contact", external: true },
+        { label: "Careers", href: "/careers", desc: "Join the Vortex IQ team", icon: "careers" },
+        { label: "Security & Trust", href: "/trust/trust-center", desc: "ISO 27001, approvals, rollback", icon: "trust" },
+        { label: "Contact Us", href: "/contact-us", desc: "Partnerships & enquiries", icon: "contact" },
       ],
     },
   },
@@ -99,6 +99,6 @@ export const NAV: NavEntry[] = [
 ];
 
 export const LOGIN_HREF = "https://app.vortexiq.ai/login";
-export const DEMO_HREF = "https://www.vortexiq.ai/contact-us";
+export const DEMO_HREF = "/contact-us";
 export const LOGO_SRC =
   "https://cdn.prod.website-files.com/68bff49fa25caa581ab0524a/68c29054c6d22238eac9bb4c_vlogo.svg";

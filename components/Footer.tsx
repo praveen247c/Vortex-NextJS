@@ -22,31 +22,31 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <h4>Product</h4>
-            <a href="https://www.vortexiq.ai/aistudio">Summit</a>
+            <Link href="/aistudio">Summit</Link>
             <Link href="/ai-os-platform">Capabilities</Link>
             <Link href="/customer-stories">Customer Stories</Link>
-            <a href="https://www.vortexiq.ai/trust/trust-center">Security &amp; Trust</a>
+            <Link href="/trust/trust-center">Security &amp; Trust</Link>
             <a href="https://monitor.vortexiq.ai/" target="_blank" rel="noopener noreferrer">Platform Status</a>
-            <a href="https://www.vortexiq.ai/join-viq">Brochure</a>
-            <a href="https://www.vortexiq.ai/register">Join Referral Program</a>
+            <Link href="/join-viq">Brochure</Link>
+            <Link href="/register">Join Referral Program</Link>
           </div>
           <div className="footer-col">
             <h4>Company</h4>
             <Link href="/about-us">About Us</Link>
             <Link href="/resources/blog">Blog</Link>
-            <a href="https://www.vortexiq.ai/careers">Careers</a>
-            <a href="https://www.vortexiq.ai/branding">Branding</a>
-            <a href="https://www.vortexiq.ai/contact-us">Contact Us</a>
+            <Link href="/careers">Careers</Link>
+            <Link href="/branding">Branding</Link>
+            <Link href="/contact-us">Contact Us</Link>
             <a href="https://www.vortexiq.ai/sitemap.xml">Sitemap</a>
-            <a href="https://www.vortexiq.ai/launch-event">Webinar and Events</a>
+            <Link href="/launch-event">Webinar and Events</Link>
           </div>
           <div className="footer-col">
             <h4>Programs</h4>
-            <a href="https://www.vortexiq.ai/partners">Partners</a>
+            <Link href="/partners">Partners</Link>
             <Link href="/solutions/for-agencies">Agency Partners</Link>
             <Link href="/solutions/for-tech-partners">Technology Partners</Link>
-            <a href="https://www.vortexiq.ai/partners/student-program">Student Partners</a>
-            <a href="https://www.vortexiq.ai/solutions/integrations">Integrations</a>
+            <Link href="/partners/student-program">Student Partners</Link>
+            <Link href="/solutions/integrations">Integrations</Link>
           </div>
         </div>
 
@@ -64,9 +64,9 @@ export default function Footer() {
         <div className="footer-fine">
           <p className="footer-reg">Registered in England and Wales Number: 14925424. VAT Number: GB 459 547 641. D-U-N-S Number: 230712948</p>
           <div className="footer-legal">
-            <a href="https://www.vortexiq.ai/privacy-policy">Privacy Policy</a>
-            <a href="https://www.vortexiq.ai/terms-of-service">Terms of Service</a>
-            <a href="https://www.vortexiq.ai/cookie-policy">Cookie Policy</a>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
+            <Link href="/cookie-policy">Cookie Policy</Link>
           </div>
         </div>
         <p className="footer-copy">© 2025 Vortex IQ. All Rights Reserved.</p>

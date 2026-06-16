@@ -67,6 +67,8 @@ em.hl{font-style:normal;color:var(--brand-purple);font-weight:500}
 .section{padding:7.5rem 0;position:relative;border-top:1px solid var(--border-dark)}
 .section--hero{padding:9rem 0 6rem;border-top:none}
 .section--soft{background:var(--white);border-top:1px solid var(--border-dark)}
+/* home page only: restore the soft-grey alternating section background (scoped via the home <main id="top">) */
+#top .section--soft{background:var(--surface-soft)}
 
 /* ---- nav (base) ---- */
 .nav{position:fixed;top:0;left:0;right:0;z-index:50;
@@ -337,7 +339,7 @@ em.hl{font-style:normal;color:var(--brand-purple);font-weight:500}
    ============================================================ */
 .nav .container{gap:0}
 .brandlink{display:flex;align-items:center;text-decoration:none}
-.navmenu{margin-left:2.6rem;display:flex;align-items:center;gap:1.8rem;list-style:none}
+.navmenu{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:1.8rem;list-style:none}
 .navmenu>li{display:flex;align-items:center}
 .navitem{display:inline-flex;align-items:center;gap:.32rem;font-family:var(--font-body);font-size:.92rem;font-weight:500;
   color:var(--text-body);text-decoration:none;background:none;border:none;cursor:pointer;padding:0;transition:color .2s}
@@ -357,7 +359,7 @@ em.hl{font-style:normal;color:var(--brand-purple);font-weight:500}
   border-radius:18px;box-shadow:0 30px 80px rgba(12,6,31,.5);padding:2rem;z-index:60;
   animation:megaIn .22s var(--ease)}
 @keyframes megaIn{from{opacity:0;transform:translateX(-50%) translateY(-6px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
-.mega--split{display:grid;grid-template-columns:300px 1fr;gap:0}
+.mega--split{display:grid;grid-template-columns:300px 1fr;gap:0;width:min(720px,calc(100vw - 3rem))}
 .mega--split .mega-overview{padding-right:2.6rem}
 .mega--split .mega-list{border-left:1px solid rgba(255,255,255,.12);padding-left:2.6rem}
 .mega-overview h3{color:#fff;font-family:var(--font-heading);font-size:1.18rem;font-weight:600;margin-bottom:.6rem}
@@ -382,6 +384,7 @@ em.hl{font-style:normal;color:var(--brand-purple);font-weight:500}
 @media(max-width:980px){
   .navmenu{display:none}
   .nav-actions .login{display:none}
+  .nav-actions .btn{display:none}
   .nav-toggle{display:inline-flex}
 
   .mobile-menu{display:block;position:fixed;top:4.5rem;left:0;right:0;bottom:0;z-index:55;
@@ -460,3 +463,10 @@ em.hl{font-style:normal;color:var(--brand-purple);font-weight:500}
   .hero-rotator{transition:none}
   html{scroll-behavior:auto}
 }
+
+/* ---- hero top clearance under the fixed header ----
+   Applies to every page's hero. `main .section--hero` (0,1,1) outranks the
+   page-injected `.section{padding:5rem 0}` (0,1,0), so the pillar/content pages
+   stop cramping the eyebrow against the nav on small screens. */
+main .section--hero{padding-top:10rem}
+@media(max-width:640px){main .section--hero{padding-top:8rem}}

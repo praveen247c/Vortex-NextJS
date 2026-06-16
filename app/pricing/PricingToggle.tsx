@@ -18,7 +18,7 @@ export default function PricingToggle() {
   useEffect(() => {
     const state: { currency: Currency; billing: Billing } = {
       currency: "USD",
-      billing: "monthly",
+      billing: "annual",
     };
     const fmt = (n: number) => n.toLocaleString("en-US");
 

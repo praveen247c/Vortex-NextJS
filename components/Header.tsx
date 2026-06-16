@@ -78,7 +78,7 @@ export default function Header() {
       <div className="container">
         <Link className="brandlink" href="/" onClick={() => setMobileOpen(false)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={LOGO_SRC} alt="Vortex IQ" style={{ height: 30 }} />
+          <img src={LOGO_SRC} alt="Vortex IQ" style={{ height: 39 }} />
         </Link>
 
         <ul className="navmenu">
