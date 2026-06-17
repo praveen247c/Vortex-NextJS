@@ -8,7 +8,7 @@ import { useEffect } from "react";
 type Currency = "USD" | "GBP" | "EUR";
 type Billing = "monthly" | "annual";
 
-const PRICES: Record<Currency, Record<string, number> & { sym: string }> = {
+const PRICES: Record<Currency, { sym: string; [plan: string]: number | string }> = {
   USD: { sym: "$", Foundation: 499, Growth: 1499, Enterprise: 3999, OmniChannel: 5499 },
   GBP: { sym: "£", Foundation: 399, Growth: 1199, Enterprise: 3199, OmniChannel: 4399 },
   EUR: { sym: "€", Foundation: 469, Growth: 1399, Enterprise: 3699, OmniChannel: 5099 },
